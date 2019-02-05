@@ -1,0 +1,6 @@
+<html>
+<Title> HTML Railroad Assignment </Title>
+<h1> HTML Railroad Assignment </h1>
+<h2> Christian Westphal </h2>
+<br  />
+<p><bold>Intro:</bold><br  />  For this assignment I attempted to create a diagram for coding tables in HTML using MS Word.  I have decided to split it into to seperate rails.  The first is the master track which handles higher level elements like table and the diffrent table sections.  Meanwhile, the <italics>level</italics> rail is responsible for the actual implementation of rows and data. </p>
