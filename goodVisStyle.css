@@ -1,0 +1,9 @@
+body {background-color: rgb(85, 0, 0);}
+div  {
+  background-color: rgb(136, 204, 136)
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+}
