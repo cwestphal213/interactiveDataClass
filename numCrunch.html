@@ -1,0 +1,55 @@
+<html>
+<h1>Number Cruncher</h1>
+<br  />
+<h3>Measures of Central Tendency</h3>
+<p>
+  <ul>
+    <li>Mean = 19.95</li>
+    <li>Median = 18.5</li>
+    <li>Modes = 2, 6, 43</li>
+  </ul>
+</p>
+<h3>Using reduce() to get the average</h3>
+<p>The reduce() method is simply a method that you can call on an array to distill import
+  it into one single value.  This is done with a callback function that is performed on each element of the array
+  until all elements have been operated on.  The reduce() method takes up to 4 parameters:
+</p>
+<ol>
+  <li>accumulator</li>
+  <li>currentValue</li>
+  <li>currentIndex</li>
+  <li>array</li>
+</ol>
+<p>To solve for the mean of the data set given by Dr. B, I used two methods.  Both used
+  the accumulator and currentValue parameters but only the second uses index.
+</p>
+<p>In the first method, reduce() is simply used to find the total and divided by the length.
+  As you can see in the image below, the callback function is predefined and sinply adds and returns
+  the two functions passed into into it, sum - the accumaltor, and newAmount - the current value.  Reduce runs
+  this function for each item on the list and returns the last value to the varaible total.  The total is then
+  divided by the length of the list to get the average.
+</p>
+<img src="avg1.png"/>
+<br  />
+<br  />
+<button onclick="displayNum (avg1,'method1')">1st Method</button>
+<p id='method1'></p>
+<p>The second method keeps all calculations inside the function rather than returning the accumulated total and
+  dividing it externally.  To do this, the function is defined within the reduce() methods parameters.  This new function
+  defined within reduce() also includes index as one of its parameters.  Inside the new function, the += operators as each newAmount
+  to the accumaltor, sum.  The following if statement stops the code if the index is has reached the last element of the list, which
+  it then returns the accumulated value divided by the length of the list to the variable avg2.
+</p>
+<img src="avg2.png"/>
+<br  />
+<br  />
+<button onclick="displayNum (avg2,'method2')">2nd Method</button>
+<br  />
+<br  />
+<p id='method2'></p>
+<br  />
+<a href = "https://blog.codeanalogies.com/2018/07/24/javascripts-reduce-method-explained-by-going-on-a-diet/">Source 1</a>
+<br  />
+<a href = "https://medium.freecodecamp.org/reduce-f47a7da511a9">Source 2</a>
+<script src="reduceExpl.js"></script>
+</html>
