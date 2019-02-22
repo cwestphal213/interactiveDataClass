@@ -1,0 +1,33 @@
+<html>
+<h1>Poor Student's Web Scrapper</h1>
+
+<h3>Centre's Academic Offerings</h3>
+<a href= "https://www.centre.edu/majors-minors/">Centre's Academic Offerings</a>
+<a href = "webScrapperAO.js">Our Code</a>
+<p>Notes: Used div.fusion-text a as a selector.  Once all of the elements pertaining to
+          to that selector were complied in a list with .nodes(), we used the mapping method
+          to get the inner text of each and return it as an element.
+</p>
+<h3>Centre's Computer Science Courses</h3>
+<a href= "http://centre.smartcatalogiq.com/2018-2019/Catalog/Course-Descriptions/CSC-Computer-Science">Centre's Comp Sci Courses</a>
+<a href = "webScrapperCourses.js">Our Code</a>
+<p>Notes: Similar method applied here to get final result.  The hardest part for us
+  was picking the right selector so we did not include the last "course descriptions" li element at the
+  end of the div we were trying to select.  Ended up using "div#main > ul:first-of-type a" the key part being the > selector which
+  allowed us to only get the a elements of the first ul in the div.
+</p>
+
+<h3>Trinity College's Academic Offerings</h3>
+<a href= "https://www.centre.edu/majors-minors/">Trinity's Academic Offerings</a>
+<a href = "trinity.js">Our Code</a>
+<p>Notes: This one was a little unique in the fact that it contained both link elements and regular text all within different tables.
+          We ended up finding that if you get the td elements in a list and retrieve their inner text,, the a element will be disregarded.
+          We also had to add an additional function to try to remove some of the empty td elements from the list.  While the function was partially
+          successful, 2 empty cells remained in the new list and a cell with a unique value.  To solve this perhaps additional logic operators could be employed.
+</p>
+
+<h3>Lehigh University's Academic Offerings</h3>
+<a href= "https://www1.lehigh.edu/academics/majors/">Lehigh's Academic Offerings</a>
+<a href = "trinity.js">Our Code</a>
+<p>Notes: This one was pretty straight forward, all classes were placed in a convenient div from which the a elements could easily be scraped from.
+</p>
