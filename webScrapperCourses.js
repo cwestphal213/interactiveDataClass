@@ -7,3 +7,6 @@ var linkList = d3.selectAll("div#main > ul:first-of-type a").nodes()
 var courseList = linkList.map(function(course){
   return course.innerText
 });
+courseList.forEach(function(course){
+  console.log(course)
+})
