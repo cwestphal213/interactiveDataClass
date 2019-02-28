@@ -17,6 +17,6 @@
 	.data(animalList)
 	.enter()
 	.append('li')
-	.html(String);
+	.text(function(d) {return d;})
 </script>
 </html>
