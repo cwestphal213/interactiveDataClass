@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title> Data Driven Document</title
+</head>
+<body>
+
+</body>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+  var animalList = ['Dog', 'Cat', 'Horse', 'Mouse'];
+
+	var ul = d3.select('body').append('ul');
+
+	ul.selectAll('li')
+	.data(animalList)
+	.enter()
+	.append('li')
+	.html(String);
+</script>
+</html>
