@@ -1,1 +1,27 @@
 
+<html>
+<header>
+<title>Seeking Interaction</title>
+</header>
+<body>
+<h1>Seeking Interaction</h1>
+
+<h2>Solar Comapnies by Market Share, 2017</h2>
+<a href="https://www.statista.com/statistics/269812/global-market-share-of-solar-pv-module-manufacturers/"> <img src="solarChart.png"> </a>
+<br  />
+<h2>D3-able Elements in the Website</h2>
+<h3>Hover color change<h3>
+<p>This feature is a nice addition to the graph and gives it some dynamism that appeals to the eye.  
+  To implement this into d3, I would use the .on method a function that sets the atrribute fill to a the new color.
+</p>
+<h3>Hover tool tips<h3>
+<p>To do this I would use a simliar .on method with mouseover passed as the first argument 
+  and for the second function to place and size the box, and go into the data set retrieve the name 
+  of the company and the percentage of market share, and display them in the box.  Rather than have 
+  select the bars on the graph for the rectangle, I would have to find a way to select the entire row whigh could probably be achieved with g elements.
+</p>
+<h3>Bars extending outward<h3>
+<p>When you first open the box in the webpage, you will notice that the boxes slowly open.  In d3, I would implement this by adding the 
+  .transition atrrtibute when drawing in my rectangles to the DOM
+</p>
+</html>
