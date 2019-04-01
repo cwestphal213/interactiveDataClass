@@ -1,0 +1,66 @@
+<html>
+<header>
+<title>Time Series Examples</title>
+<style>
+img {
+  height: 75%;
+}
+
+p{
+  margin: auto;
+  margin-top: 20px;
+ width: 50%;
+ border: 3px solid green;
+ padding: 10px;
+}
+h1,h3{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+</style>
+</header>
+<body>
+<h1> Changes in Data Over Time</h1>
+<h3>Colors</h3>
+<p>
+Cairo uses color to not only indicate the differences between time series and
+different sets of data but also uses it to show the severity of certain values
+ within the data.  I particularly liked the way he employs it with the horizon
+  chart which is not only visually appealing but also more space efficient
+  than a regular line chart.
+  </p>
+  <p>
+A different way in which color is used to show change over time is
+<a href='https://www.citylab.com/design/2018/12/american-history-immigration-data-dendrochronology/578125/'>this</a>
+dendrochronology immigration to the US by country of origin.  The use of
+color helps you to understand migration patterns better and how each
+country/region is represented.
+</p>
+<h3>Trendlines</h3>
+<p>
+Cairo provides general data that helps viewers see the long-run effects over time by adding a moving average curve, a trendline, or sometimes overlaying the graph of a specific variable.  The moving average and the trendline let the user picture visualize the change in the data over a greater time period while overlaying the line of a new variable allows the viewer to understand the data’s relationship to it.
+  </p>
+  <p>
+A cool example of this is Bloomberg’s global warming chart.
+Not only does it show how each component of global warming is
+attributed to human and unknown factors but also employs cool
+animations to help viewers visualize the change over time. <a href='https://www.bloomberg.com/graphics/2015-whats-warming-the-world/'>Link</a>
+</p>
+<h3>Seasonal Change</h3>
+<p>
+Cairo implements this in two ways.  The first is just by separating different time periods by colored bars in different line graphs to help the viewer distinguish the differences in the data.  The second is using the seasonal subseries chart that take data from a longer time period and shows the change in each season, which helps to highlight the effect of the season on the overall data historically.
+  </p>
+<img src='https://vizzendata.files.wordpress.com/2018/06/influenza.png'/>
+  <p id='last'>
+A great example of this is the above visualization that shows the percentage of flu cases reported per season from 2007 to 2018.  The chart does a really good job of helping the viewer to see the disparity in flu cases reported between the fall and winter months and the summer and spring months.
+</p>
+</body>
+</html>
