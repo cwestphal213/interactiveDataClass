@@ -1,0 +1,45 @@
+<html>
+<Header>
+<title>Inner Join Explained</title>
+<style>
+img {
+  height: 50%;
+}
+p{
+  margin: auto;
+  margin-top: 20px;
+ width: 70%;
+ border: 3px solid green;
+ padding: 10px;
+}
+h1,h3{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</header>
+<body>
+<h1>INNER JOIN</h1>
+<p>Inner join allows you to connect two tables within the same database to one another based on common fields that they share.  An example of the code from w3schools is shown below:
+</p>
+<img src='innerJoinCode.png'/>
+<p>In this case the two columns, Orders.OrderID, Customers.CustomerName are the two fields that the user is looking for, but they appear on two different tables.  The FROM orders part tells us where we want to originate the data, from orders, and the INNER JOIN Customers tells us that we want to match it up with the data from the Customers table.
+</p>
+<p>The next part ON tells the computer which field it should use to determine whether or not it should draw from e ach of the tables.  In this case the shared field between the two tables is customerID, so whenever Orders.CustomerID = Customers.CustomerID the computer will return the fields specified in the SELECT section.
+</p>
+<p>The computer will not return the customerID of each of the columns because it is not specified in the SELECT statement, rather it is using it to match the specified data(orderID and CustomerName) to one another and returning just those columns instead like below:
+</p>
+<img src='innerJoinText.png'/>
+<p>Another quick note is that INNER JOIN lives exclusively inside the FROM statement(which we use to delineate where we pull our data from) meaning that you can potentially chain more commands afterwards like WHERE or ORDER BY.  You can also add in a INNER JOIN within the same FROM statement to include data from 3 tables like seen below:
+</p>
+<img src='triJoinGraph.png'/>
+<img src='triJoinCode.png'/>
+</body>
+</HTML>
