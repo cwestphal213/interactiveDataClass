@@ -1,0 +1,37 @@
+<html>
+<Header>
+<title>Mapping</title>
+<style>
+img {
+  height: 50%;
+}
+p{
+  margin: auto;
+  margin-top: 20px;
+ width: 70%;
+ border: 3px solid green;
+ padding: 10px;
+}
+h1,h3{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</header>
+<body>
+<h1>Pitfalls of Data Vis. Mapping</h1>
+
+<p>1.  Not using the appropriate map: As cairo mentions in his text, it is hard to project a sphere onto a flat space.  One problem that cartographers/ data visualists run into is that they do not choose the proper map for the data that they are trying to choose.  In the book, Cairo points to the Mercator map that that was developed for sea routes and maritime navigation.  Because of this, Mercator does not accurately represent the true size of landmasses and would probably better be used for maps portraying sea travel or other things where land is not the main focus.
+</p>
+<p>2.	 Not Scaling Objects correctly: in the book, Cairo also mentions that pitfall of many data scientists attempting to implement mas into their code is that they fail to account for proportional size when mapping data to an object.  For example, if you double the size of a circle to represent a doubling in the data, the area will be multiplied by a multiple of that amount.  Rather, a different type of scaling should be employed where the radius is the square root of the circle’s representative data over the largest value.
+</p>
+
+</body>
+</HTML>
